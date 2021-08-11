@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    /* primary */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    /* neutral */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s ease-in-out;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background: url('../images/pattern-background-desktop.svg') no-repeat, #e0e8ff;
+    background-size: contain;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    width: 100vw;
+    max-width: 1200px;
+    min-height: calc(100vh - 16px);
+    margin: 0 auto;
+    padding: 0 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: max(90%, 120px);
+    max-width: 350px;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 20px 10px var(--pale-blue);
+}
+
+.card-body{
+    margin: 2rem 10%;
+}
+
+.card-body h2 , .card-body h3{
+    color: var(--dark-blue);
+}
+
+.card-body h2{
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.card-body p{
+    color: var(--desaturated-blue);
+    max-width: 95%;
+    line-height: 1.75rem;
+}
+
+.plan{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--very-pale-blue);
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.plan::before{
+    content: url('../images/icon-music.svg');
+}
+
+.plan div:last-child{
+    margin-left: 1.75rem;
+}
+
+.plan a{
+    color: var(--bright-blue);
+}
+
+.plan a:hover{
+    color: rgba(56, 41, 224, 0.7);
+    text-decoration: none;
+}
+
+.btn{
+    width: 100%;
+    border: 0;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+    color: var(--desaturated-blue);
+}
+
+.btn:hover{
+    color: var(--dark-blue);
+}
+
+.btn-filled{
+    margin-bottom: 1.5rem;
+    background: var(--bright-blue);
+    color: #fff;
+    box-shadow: 0 10px 15px rgb(56 41 224 / 25%);
+}
+
+.btn-filled:hover{
+    background: rgba(56, 41, 224, 0.7);
+    color: #fff;
+}
+
+
